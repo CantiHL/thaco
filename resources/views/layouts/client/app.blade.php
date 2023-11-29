@@ -39,8 +39,7 @@
     <meta name="twitter:title" content="{{ $title }}">
     <meta name="twitter:description" content="{{ $description }}">
 
-    <link media="all" type="text/css" rel="stylesheet"
-        href="https://www.thacogroup.vn/vendor/core/plugins/language/css/language-public.css?v=1.0.0">
+    <link media="all" type="text/css" rel="stylesheet" href="{{ asset('css/language.css') }}">
     <link media="all" type="text/css" rel="stylesheet"
         href="//cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link media="all" type="text/css" rel="stylesheet" href="//unpkg.com/element-ui/lib/theme-chalk/index.css">
@@ -68,8 +67,8 @@
         href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link media="all" type="text/css" rel="stylesheet"
         href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    {{-- <link media="all" type="text/css" rel="stylesheet" href="{{ asset('css/main.css') }}"> --}}
-    <link media="all" type="text/css" rel="stylesheet" href="https://www.thacogroup.vn/themes/main/css/common.css">
+    {{-- <link media="all" type="text/css" rel="stylesheet" href="https://www.thacogroup.vn/themes/main/css/common.css"> --}}
+    <link media="all" type="text/css" rel="stylesheet" href="{{ asset('css/main.css') }}">
 
     <link media="all" type="text/css" rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
@@ -141,8 +140,8 @@
             margin-bottom: unset;
         }
     </style>
-    <link rel="alternate" href="https://www.thacogroup.vn/en/lien-he" hreflang="en" />
-    <link rel="alternate" href="https://www.thacogroup.vn/lien-he" hreflang="vi" />
+    <link rel="alternate" href="{{ route('contact') }}" hreflang="en" />
+    <link rel="alternate" href="{{ route('contact') }}" hreflang="vi" />
     @livewireStyles
     @livewireScripts
 
@@ -163,34 +162,30 @@
         <ul>
             <li class="social-item">
                 <a href="https://www.facebook.com/TapdoanTruongHai.THACO" target="_blank">
-                    <img class="drop-shadow" src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/fb.png"
+                    <img class="drop-shadow" src="{{ asset('img/fb.png') }}"
                         alt="https://www.facebook.com/TapdoanTruongHai.THACO">
                 </a>
             </li>
             <li class="social-item">
                 <a href="https://www.linkedin.com/company/thacogroup/" target="_blank">
-                    <img class="drop-shadow" src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/in.png"
+                    <img class="drop-shadow" src="{{ asset('img/in.png') }}"
                         alt="https://www.linkedin.com/company/thacogroup/">
                 </a>
             </li>
             <li class="social-item">
                 <a href="https://www.youtube.com/channel/UCI4u7-NwfRhxhsSl3ps6NfQ" target="_blank">
-                    <img class="drop-shadow"
-                        src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/ytb.png"
+                    <img class="drop-shadow" src="{{ asset('img/ytb.png') }}"
                         alt="https://www.youtube.com/channel/UCI4u7-NwfRhxhsSl3ps6NfQ">
                 </a>
             </li>
             <li class="social-item">
                 <a href=" mailto:vanhoatruyenthong@thaco.com.vn">
-                    <img class="drop-shadow"
-                        src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/email.png" alt="">
+                    <img class="drop-shadow" src="{{ asset('img/email.png') }}" alt="">
                 </a>
             </li>
             <li class="social-item">
                 <a href="tel:(028) 39977824">
-                    <img class="drop-shadow"
-                        src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/call.png"
-                        alt="(028) 39977824">
+                    <img class="drop-shadow" src="{{ asset('img/call.png') }}" alt="(028) 39977824">
                 </a>
             </li>
         </ul>
@@ -217,7 +212,7 @@
     <script src="//unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     {{-- <script src="https://www.thacogroup.vn/themes/main/js/common.js?v=1700535495"></script> --}}
     <script src="{{ asset('js/common.js') }}"></script>
-    <script src="https://www.thacogroup.vn/vendor/core/plugins/language/js/language-public.js?v=1.0.0"></script>
+    <script src="{{ asset('js/language.js') }}"></script>
     <script>
         AOS.init({
             easing: 'ease-in-out-sine'
