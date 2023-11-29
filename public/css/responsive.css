@@ -1,0 +1,284 @@
+.footer .office-wrapper .office .address {
+    max-width: 290px
+}
+
+.footer .office-wrapper .office .title {
+    text-align: center
+}
+
+.partner-wrapper .partner-banner .logo-partner {
+    max-width: 1366px
+}
+
+@media screen and (max-width: 992px) {
+    .post-detail-wrapper .post-detail-content .content-middle .post-related__list .post_relate_content .post-content-bottom .name {
+        height: 42px
+    }
+
+    .post-content h1 {
+        font-size: 22px;
+    }
+
+    .post-content h2 {
+        font-size: 20px;
+    }
+
+    .post-content h3 {
+        font-size: 18px;
+    }
+
+    .post-content h4 {
+        font-size: 17px;
+    }
+
+    .post-content h5 {
+        font-size: 17px;
+    }
+
+    .post-content h6 {
+        font-size: 17px;
+    }
+}
+
+.shareholder-infomation_left .list-info .info-item .info-right h3 a {
+    -webkit-line-clamp: 3
+}
+
+.post-content h1 {
+    font-size: 30px;
+    margin: 0.5rem 0
+}
+
+.post-content h2 {
+    font-size: 28px;
+    margin: 0.5rem 0
+}
+
+.post-content h3 {
+    font-size: 26px;
+    margin: 0.5rem 0
+}
+
+//.post-content h4{font-size: 24px;margin:0.5rem 0}
+.post-content h5 {
+    font-size: 22px;
+    margin: 0.5rem 0
+}
+
+.post-content h6 {
+    font-size: 20px;
+    margin: 0.5rem 0
+}
+
+.post-content table {
+    border-collapse: collapse
+}
+
+.post-content table:not([cellpadding]) td,
+.post-content table:not([cellpadding]) th {
+    padding: .4rem
+}
+
+.post-content table[border]:not([border="0"]):not([style*=border-width]) td,
+.post-content table[border]:not([border="0"]):not([style*=border-width]) th {
+    border-width: 1px
+}
+
+.post-content table[border]:not([border="0"]):not([style*=border-style]) td,
+.post-content table[border]:not([border="0"]):not([style*=border-style]) th {
+    border-style: solid
+}
+
+.post-content table[border]:not([border="0"]):not([style*=border-color]) td,
+.post-content table[border]:not([border="0"]):not([style*=border-color]) th {
+    border-color: #ccc
+}
+
+.partner-wrapper .title__company {
+    margin-bottom: 1rem;
+}
+
+.future-goal-banner.nofixed-ipad {
+    background-attachment: unset !important;
+}
+
+.future-goal-banner-activity.nofixed-ipad {
+    background-attachment: unset !important;
+}
+
+
+#button-activity .pagination-customize li img {
+    width: 2.5vw;
+    height: 2.5vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+.field-of-activity-box .box-node-right .pagination-customize .pagi-item .number {
+    background: none !important;
+    border: none;
+    transform: translateX(.8vw);
+}
+
+.field-of-activity-box .box-node-right .pagination-customize .pagi-item .number img {
+    background: none !important;
+    border: none;
+    width: 3.6vw !important;
+    height: 3.5vw !important;
+}
+
+.field-of-activity-box .box-node-right .pagination-customize .pagi-item .number img:hover {
+    filter: drop-shadow(-3px 0px 1px #00000038);
+}
+
+.field-of-activity-box .box-node-right .pagination-customize .pagi-item:hover .text {
+    padding: 0px 15px 0px 50px;
+}
+
+.field-of-activity-box .box-node-right .pagination-customize .pagi-item {
+    background: transparent;
+    height: 2.5vw !important;
+    margin-bottom: 1vw;
+}
+
+.field-of-activity-box .box-node-right {
+    right: 25px;
+}
+
+.activity-content-detail-slide .activity-content-detail-slide__detail-content .swiper-slide {
+    transform: scale(1) !important;
+}
+
+.field-of-activity-box .box-node-right .pagination-customize .pagi-item:hover {
+    clip-path: polygon(107.05% -16.67%, 107.05% 45.24%, 107.05% 116.67%, 11.26% 116.67%, 3.71% 52.38%, 10.89% -19.05%);
+}
+
+#button-top {
+    right: 20px !important;
+}
+
+@media screen and (max-width: 992px) {
+    .footer .footer-content .logo_footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer .footer-content div.logo_footer img {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+.nav-bar-mobile .brand {
+    position: relative;
+    left: 27px;
+}
+
+.recruitment-wrapper .recruitment-banner .bottom_slider_wrapper div.title_label h3 {
+    margin-bottom: unset;
+}
+
+.footer .footer-content .company_name {
+    text-align: center;
+}
+
+.footer .footer-content .title-connect {
+    text-align: center;
+}
+
+.footer .footer-content .list-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-content .footer-bottom-mobile .policy {
+    max-width: 100%;
+    /*! justify-content: center; */
+    /*! align-content: center; */
+    /*! display: flex; */
+    align-items: center;
+}
+
+.recruitment-wrapper .recruitment-banner {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .recruitment-wrapper .recruitment-banner {
+        background-attachment: unset;
+    }
+}
+
+.recruitment-wrapper .recruitment-banner .bottom_slider_wrapper div.title_label h3,
+.recruitment-wrapper .recruitment-banner .bottom_slider_wrapper .postion-apply {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 481px) {
+    .partner-wrapper .partner-banner .logo-partner .logo-desktop .logo-company .logo-item-slide .logo img {
+        transform: scale(0.52);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .partner-wrapper .partner-banner .logo-partner .logo-desktop .logo-company .logo-item-slide .logo img {
+        transform: scale(0.38);
+    }
+}
+
+.logo_footer img {
+    width: 100%;
+    max-width: 250px !important;
+}
+
+#button-activity {
+    display: none !important;
+}
+
+.partner-wrapper .partner-banner .logo-partner .logo-desktop .logo-company .logo-item-slide .logo img {
+    max-width: 100%;
+    transform: scale(1.7) !important;
+}
+
+
+@media screen and (max-width: 1680px) {
+    .banner-page .main-slider .swiper-slide .bg-box {
+        left: 63%;
+    }
+
+    .banner-page .main-slider .swiper-slide .content {
+        left: 63% !important;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .banner-page .main-slider .swiper-slide .content {
+        left: 63% !important;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .banner-page .main-slider .swiper-slide .bg-box {
+        left: 63% !important;
+        height: 350px;
+    }
+
+    .banner-page .main-slider .swiper-slide .content {
+        left: 63% !important;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .field-of-activity .item-slider-top .post-banner {
+        left: 63% !important;
+    }
+}
+
+.banner-page .main-slider .swiper-slide .box-left {
+    right: 0 !important;
+}
