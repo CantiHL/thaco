@@ -152,7 +152,7 @@
                                     <div class="swiper-slide">
                                         <div class="logo-item-slide">
                                             <div class="logo">
-                                                <a target="_blank" href="https://thilogi.vn/">
+                                                <a target="_blank" href="{{ $item->link }}">
                                                     <img class="" src="{{ Storage::url($item->image) }}"
                                                         alt="logo">
                                                 </a>

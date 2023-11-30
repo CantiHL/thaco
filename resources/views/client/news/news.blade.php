@@ -66,7 +66,7 @@
                                 <i class="fas fa-tag"></i>
                                 @foreach ($data->tag as $item)
                                     <div class="tag-item active">
-                                        <a href="https://thacogroup.vn/tags/{{ $item }}">{{ $item }}</a>
+                                        <a href="#">{{ $item }}</a>
                                     </div>
                                 @endforeach
                             </div>

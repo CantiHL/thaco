@@ -11,9 +11,11 @@ class Member extends Component
     use WithFileUploads;
     public $name;
     public $description;
+    public $link;
     public $image;
     public $nameupdate = [];
     public $descriptionupdate = [];
+    public $linkupdate = [];
     public $imageupdate = null;
     public $data = [];
 
@@ -24,6 +26,7 @@ class Member extends Component
             foreach ($this->data as $item) {
                 $this->nameupdate[$item->id] = $item->name;
                 $this->descriptionupdate[$item->id] = $item->description;
+                $this->linkupdate[$item->id] = $item->link;
             }
         }
     }
@@ -38,6 +41,7 @@ class Member extends Component
         \App\Models\Member::create([
             'name' => $this->name,
             'description' => $this->description,
+            'link' => $this->link,
             'image' => $path,
         ]);
         $this->data = \App\Models\Member::all();
@@ -45,6 +49,8 @@ class Member extends Component
             foreach ($this->data as $item) {
                 $this->nameupdate[$item->id] = $item->name;
                 $this->descriptionupdate[$item->id] = $item->description;
+                $this->linkupdate[$item->id] = $item->link;
+
             }
         }
         $this->dispatch('toastr', ['message' => 'Success']);
@@ -65,12 +71,15 @@ class Member extends Component
             $member->update([
                 'name' => $this->nameupdate[$id],
                 'description' => $this->descriptionupdate[$id],
+                'link' => $this->linkupdate[$id],
                 'image' => $path,
             ]);
         } else {
             $member->update([
                 'name' => $this->nameupdate[$id],
                 'description' => $this->descriptionupdate[$id],
+                'link' => $this->linkupdate[$id],
+
             ]);
         }
         $member->save();
@@ -80,7 +89,8 @@ class Member extends Component
     public function delete($id)
     {
         $member = \App\Models\Member::find($id);
-        Storage::delete($member->image);
+        if ($member->image)
+            Storage::delete($member->image);
         $member->delete();
         $this->data = \App\Models\Member::all();
         $this->dispatch('toastr', ['message' => 'Success']);

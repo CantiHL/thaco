@@ -37,7 +37,13 @@ class HomeController extends Controller
         }
 
         $recruits = Recruit::select('name', 'link_job')->get();
-        $members = Member::select('image')->get();
+        $members = Member::select('image', 'name', 'link')->get();
+        $members = $members->reject(function ($item) {
+            if (isset($item->name)) {
+                return $item->name == 'THACO - CÔNG TY CỔ PHẦN TẬP ĐOÀN TRƯỜNG HẢI';
+            }return;
+        });
+        // dd($members);
         $news = Tiding::latest()->limit(4)->get();
         $newsListAll = collect($news)->map(function ($post) {
             $post->tag = json_decode($post->tag);
@@ -82,9 +88,7 @@ class HomeController extends Controller
         });
         $fieldLimit2 = $fieldAll->take(2);
         $fieldDiff = $fieldAll->diff($fieldLimit2);
-
-        $members = Member::all();
-        return view("client.home", compact(['title', 'site_image', 'site_url', 'content', 'site_name', 'description', 'recruits', 'members', 'lastest', 'newsList', 'newsListAll', 'fieldLimit2', 'fieldDiff', 'members']));
+        return view("client.home", compact(['title', 'site_image', 'site_url', 'content', 'site_name', 'description', 'recruits', 'members', 'lastest', 'newsList', 'newsListAll', 'fieldLimit2', 'fieldDiff']));
     }
     public function contact()
     {
