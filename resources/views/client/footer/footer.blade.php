@@ -2,7 +2,7 @@
     <div class="container-customize ">
         <div class="footer-content">
             <div class="logo_footer">
-                <img src="https://www.thacogroup.vn/storage/media/thacotruonghai-1.png" alt="logo">
+                <img src="{{ asset('img/thacotruonghai-1.png') }}" alt="logo">
             </div>
             <div class="company_name">
                 <h4 class="font30">CÔNG TY CỔ PHẦN TẬP ĐOÀN TRƯỜNG HẢI</h4>
@@ -62,32 +62,28 @@
                 <ul>
                     <li>
                         <a href="https://www.facebook.com/TapdoanTruongHai.THACO" target="_blank">
-                            <img src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/fb.png"
-                                alt="https://www.facebook.com/TapdoanTruongHai.THACO">
+                            <img src="{{ asset('img/fb.png') }}" alt="https://www.facebook.com/TapdoanTruongHai.THACO">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/company/thacogroup/" target="_blank">
-                            <img src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/in.png"
-                                alt="https://www.linkedin.com/company/thacogroup/">
+                            <img src="{{ asset('img/in.png') }}" alt="https://www.linkedin.com/company/thacogroup/">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com/channel/UCI4u7-NwfRhxhsSl3ps6NfQ" target="_blank">
-                            <img src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/ytb.png"
+                            <img src="{{ asset('img/ytb.png') }}"
                                 alt="https://www.youtube.com/channel/UCI4u7-NwfRhxhsSl3ps6NfQ">
                         </a>
                     </li>
                     <li>
                         <a href="maito:vanhoatruyenthong@thaco.com.vn">
-                            <img src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/email.png"
-                                alt="">
+                            <img src="{{ asset('img/email (1).png') }}" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="tel:(028) 39977824">
-                            <img src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/call.png"
-                                alt="(028) 39977824">
+                            <img src="{{ asset('img/call.png') }}" alt="(028) 39977824">
                         </a>
                     </li>
                 </ul>
@@ -95,9 +91,9 @@
             </div>
             <div class="footer-bottom-mobile d-block d-lg-none">
                 <div class="col-md-5 col-sm-4 col-6 policy">
-                    <a href="https://www.thacogroup.vn/chinh-sach-bao-mat" class="text-white" target="_blank">Chính sách
+                    <a href="{{ route('home') }}" class="text-white" target="_blank">Chính sách
                         bảo mật</a>
-                    <a href="https://www.thacogroup.vn/dieu-khoan-su-dung" class="text-white" target="_self">Điều
+                    <a href="{{ route('home') }}" class="text-white" target="_self">Điều
                         khoản sử dụng</a>
                 </div>
             </div>
@@ -114,9 +110,9 @@
 
                 </div>
                 <div class="col-md-5 col-sm-4 col-6 policy">
-                    <a href="https://www.thacogroup.vn/chinh-sach-bao-mat" class="text-white" target="_blank">Chính sách
+                    <a href="{{ route('home') }}" class="text-white" target="_blank">Chính sách
                         bảo mật</a>
-                    <a href="https://www.thacogroup.vn/dieu-khoan-su-dung" class="text-white" target="_self">Điều
+                    <a href="{{ route('home') }}" class="text-white" target="_self">Điều
                         khoản sử dụng</a>
                 </div>
             </div>

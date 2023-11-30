@@ -5,15 +5,14 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <a class="post_link" href="javascript:;">
-                        <img src="https://www.thacogroup.vn/storage/quan-he-co-dong/file-dieu-le-quy-che/toa-nha-sofic-1920x-860.jpg"
-                            alt="" class="">
+                        <img src="{{ asset('img/banner/1 (8).gif') }}" alt="" class="">
                     </a>
                 </div>
 
             </div>
             <div class="swiper-pagination"></div>
             <div class="scroll-down" id="js-scroll-down">
-                <img src="https://www.thacogroup.vn/themes/main/images/home/icon-scroll.png" alt="icon">
+                <img src="{{ asset('img/icon-scroll.png') }}" alt="icon">
             </div>
         </div>
     </section>
@@ -24,9 +23,6 @@
         <div class="media-newspapers-wrapper">
             <div class="container-customize">
                 <div class="shareholder-infomation mb-100">
-                    <div class="loading d-none">
-                        <img src="https://www.thacogroup.vn/themes/main/images/media/loading.gif" alt="Loading">
-                    </div>
                     @yield('shareholder')
                     <div class="relationship-sibar">
                         <div class="relationship__content">

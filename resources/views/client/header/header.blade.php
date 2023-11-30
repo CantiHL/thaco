@@ -39,13 +39,9 @@
     </div>
     <div class="container-customize ">
         <nav class="navbar navbar-expand-lg">
-
             <a wire:navigate class="logo_link-blue" href="{{ route('home') }}">
-
                 <img src="{{ asset('img/logo-6-3.png') }}">
-
             </a>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -196,8 +192,8 @@
                                 </a>
                             </div>
                             <div class="cmenu">
-                                <a wire:navigate href="https://www.thacogroup.vn/thu-vien-anh-va-video"
-                                    title="Thư viện ảnh và video" target="_self" class="dropdown-item">
+                                <a wire:navigate href="#" title="Thư viện ảnh và video" target="_self"
+                                    class="dropdown-item">
                                     Thư viện ảnh và video
                                 </a>
                             </div>
@@ -211,7 +207,7 @@
                         <div class="dropdown-menu sm-menu dropdown--search">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <form action="https://www.thacogroup.vn/search">
+                                    <form action="#">
                                         <div class="search-box input-group">
                                             <input autocomplete="off" type="text" name="keyword" value=""
                                                 class="form-control" placeholder="Tìm kiếm... ">
@@ -239,7 +235,7 @@
         <nav class="menu-mobile">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="https://www.thacogroup.vn" target="_self">Trang chủ</a>
+                    <a href="{{ route('home') }}" target="_self">Trang chủ</a>
                 </li>
                 <li class="nav-item">
                     <a href="javascript:;">Giới thiệu</a>
@@ -250,7 +246,7 @@
                                 THACO</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="https://www.thacogroup.vn/van-hoa-thaco" class="" target="_self">Văn
+                            <a href="{{ route('trandition') }}" class="" target="_self">Văn
                                 hóa THACO</a>
                         </li>
                     </ul>
@@ -342,8 +338,7 @@
                                 cáo báo chí</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="https://www.thacogroup.vn/thu-vien-anh-va-video" class=""
-                                target="_self">Thư viện ảnh và video</a>
+                            <a href="#" class="" target="_self">Thư viện ảnh và video</a>
                         </li>
                     </ul>
 
@@ -356,24 +351,20 @@
                 </li>
                 <li class="icon-social nav-item">
                     <a href="https://www.facebook.com/TapdoanTruongHai.THACO" target="_blank">
-                        <img src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/fb-1.png"
-                            alt="https://www.facebook.com/TapdoanTruongHai.THACO">
+                        <img src="{{ asset('img/fb.png') }}" alt="https://www.facebook.com/TapdoanTruongHai.THACO">
                     </a>
                     <a href="https://www.linkedin.com/company/thacogroup/" target="_blank">
-                        <img src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/linkedin.png"
-                            alt="https://www.linkedin.com/company/thacogroup/">
+                        <img src="{{ asset('img/in.png') }}" alt="https://www.linkedin.com/company/thacogroup/">
                     </a>
                     <a href="https://www.youtube.com/channel/UCI4u7-NwfRhxhsSl3ps6NfQ" target="_blank">
-                        <img src="https://www.thacogroup.vn/themes/main/images/home/logo/youtube.png"
+                        <img src="{{ asset('img/ytb.png') }}"
                             alt="https://www.youtube.com/channel/UCI4u7-NwfRhxhsSl3ps6NfQ">
                     </a>
                     <a href="maito:vanhoatruyenthong@thaco.com.vn">
-                        <img src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/mail.png"
-                            alt="vanhoatruyenthong@thaco.com.vn">
+                        <img src="{{ asset('img/mail-1.png') }}" alt="vanhoatruyenthong@thaco.com.vn">
                     </a>
                     <a href="tel:(028) 39977824">
-                        <img src="https://www.thacogroup.vn/storage/trang-chu/icon-mang-xa-hoi/phone-1.png"
-                            alt="(028) 39977824">
+                        <img src="{{ asset('img/call.png') }}" alt="(028) 39977824">
                     </a>
                 </li>
             </ul>
@@ -383,15 +374,15 @@
             </a>
         </div>
         <div class="brand">
-            <a href="https://www.thacogroup.vn" class="logo">
-                <img src="https://www.thacogroup.vn/storage/trang-chu/logo-thaco-1/logo-6-3.png" alt="THACO Group">
+            <a href="{{ route('home') }}" class="logo">
+                <img src="{{ asset('img/logo-6-3.png') }}" alt="THACO Group">
             </a>
 
         </div>
 
         <ul class="language">
             <div id="wrap">
-                <form method="get" action="https://www.thacogroup.vn/search" autocomplete="on">
+                <form method="get" action="{{ route('home') }}" autocomplete="on">
                     <i class="fal fa-search"></i>
                     <input id="search" name="keyword" type="text" placeholder="Tìm kiếm..." value="">
 
@@ -400,13 +391,13 @@
 
             <li class="text-uppercase">
 
-                <a rel="alternate" hreflang="vi" href="https://www.thacogroup.vn/lien-he">
+                <a rel="alternate" hreflang="vi" href="{{ route('home') }}">
                     <span class="active">vi</span>
                 </a>
             </li>
             <li class="text-uppercase">
 
-                <a rel="alternate" hreflang="en" href="https://www.thacogroup.vn/en/lien-he">
+                <a rel="alternate" hreflang="en" href="{{ route('home') }}">
                     <span class="">en</span>
                 </a>
             </li>

@@ -25,9 +25,6 @@
             </form>
         </div>
         <div class="list-info">
-            <div class="list-info-loading d-none">
-                <img src="https://www.thacogroup.vn/themes/main/images/media/loading.gif" alt="Loading">
-            </div>
             @foreach ($data1 as $item)
                 <div wire:key="{{ $item->id }}" class="info-item">
                     <div class="info-left">

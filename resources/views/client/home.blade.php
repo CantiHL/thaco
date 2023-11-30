@@ -44,7 +44,7 @@
             </div>
             <div class="swiper-pagination"></div>
             <div class="scroll-down" id="js-scroll-down">
-                <img src="https://www.thacogroup.vn/themes/main/images/home/icon-scroll.png" alt="icon">
+                <img src="{{ asset('img/icon-scroll.png') }}" alt="icon">
             </div>
         </div>
     </section>
@@ -120,10 +120,10 @@
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-next drop-shadow-button"> <img
-                                    src="https://www.thacogroup.vn/themes/main/images/home/Icon-right.png" alt="">
+                                    src="{{ asset('img/Icon-right.png') }}" alt="">
                             </div>
-                            <div class="swiper-button-prev drop-shadow-button"> <img
-                                    src="https://www.thacogroup.vn/themes/main/images/home/icon-left.png" alt="">
+                            <div class="swiper-button-prev drop-shadow-button"> <img src="{{ asset('img/icon-left.png') }}"
+                                    alt="">
                             </div>
 
                         </div>
@@ -230,11 +230,11 @@
                                 </div>
                             @endforeach
                         </div>
-                        <div class="swiper-button-next drop-shadow-button"> <img
-                                src="https://www.thacogroup.vn/themes/main/images/home/Icon-right.png" alt="next">
+                        <div class="swiper-button-next drop-shadow-button"> <img src="{{ asset('img/Icon-right.png') }}"
+                                alt="next">
                         </div>
-                        <div class="swiper-button-prev drop-shadow-button"> <img
-                                src="https://www.thacogroup.vn/themes/main/images/home/icon-left.png" alt="prev">
+                        <div class="swiper-button-prev drop-shadow-button"> <img src="{{ asset('img/icon-left.png') }}"
+                                alt="prev">
                         </div>
 
                     </div>
@@ -298,7 +298,7 @@
 
                 </div>
                 <div class="swiper-pagination"></div>
-                <a href="/thu-vien-anh-va-video" class="read-more" title="Xem thêm">Xem thêm</a>
+                <a href="#" class="read-more" title="Xem thêm">Xem thêm</a>
             </div>
         </div>
     </div>
