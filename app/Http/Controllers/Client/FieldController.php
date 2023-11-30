@@ -30,11 +30,15 @@ class FieldController extends Controller
         $first_produce = $activate_produce->where('title', 'SẢN XUẤT')->first();
         $first_business = $activate_business->where('title', 'KINH DOANH')->first();
         $produce_diff = $activate_produce->reject(function ($item) use ($first_produce) {
-            return $item->title === $first_produce->title;
+            if (isset($first_produce->title)) {
+                return $item->title === $first_produce->title;
+            }return;
         });
 
         $business_diff = $activate_business->reject(function ($item) use ($first_business) {
-            return $item->title === $first_business->title;
+            if (isset($first_business->title)) {
+                return $item->title === $first_business->title;
+            }return;
         });
         $news = Tiding::join('fields', 'fields.id', 'tidings.field_id')
             ->where('fields.name', 'LĨNH VỰC Ô TÔ')
@@ -101,14 +105,20 @@ class FieldController extends Controller
         $first_cow_farming = $activate_cow_farming->where('title', 'CHĂN NUÔI BÒ')->first();
         $first_pig_farming = $activate_pig_farming->where('title', 'CHĂN NUÔI HEO')->first();
         $cultivate_diff = $activate_cultivate->reject(function ($item) use ($first_cultivate) {
-            return $item->title === $first_cultivate->title;
+            if (isset($first_cultivate->title)) {
+                return $item->title === $first_cultivate->title;
+            }return;
         });
 
         $cow_farming_diff = $activate_cow_farming->reject(function ($item) use ($first_cow_farming) {
-            return $item->title === $first_cow_farming->title;
+            if (isset($first_cow_farming->title)) {
+                return $item->title === $first_cow_farming->title;
+            }return;
         });
         $pig_farming_diff = $activate_pig_farming->reject(function ($item) use ($first_pig_farming) {
-            return $item->title === $first_pig_farming->title;
+            if (isset($first_pig_farming->title)) {
+                return $item->title === $first_pig_farming->title;
+            }return;
         });
         $news = Tiding::join('fields', 'fields.id', 'tidings.field_id')
             ->where('fields.name', 'LĨNH VỰC NÔNG NGHIỆP')
@@ -203,26 +213,40 @@ class FieldController extends Controller
         $first_dvthietke = $dvthietke->where('title', 'DỊCH VỤ THIẾT KẾ VÀ PHÁT TRIỂN SẢN PHẨM')->first();
 
         $somiroc_diff = $somiroc->reject(function ($item) use ($first_somiroc) {
-            return $item->title === $first_somiroc->title;
+            if (isset($first_somiroc->title)) {
+                return $item->title === $first_somiroc->title;
+            }return;
         });
 
         $giacongcokhi_diff = $giacongcokhi->reject(function ($item) use ($first_giacongcokhi) {
-            return $item->title === $first_giacongcokhi->title;
+            if (isset($first_giacongcokhi->title)) {
+                return $item->title === $first_giacongcokhi->title;
+            }return;
         });
         $cuncapthep_diff = $cungcapthep->reject(function ($item) use ($first_cungcapthep) {
-            return $item->title === $first_cungcapthep->title;
+            if (isset($first_cungcapthep->title)) {
+                return $item->title === $first_cungcapthep->title;
+            }return;
         });
         $linhkiencn_diff = $linhkiencn->reject(function ($item) use ($first_linhkiencn) {
-            return $item->title === $first_linhkiencn->title;
+            if (isset($first_linhkiencn->title)) {
+                return $item->title === $first_linhkiencn->title;
+            }return;
         });
         $tbnongnghiep_diff = $tbnongnghiep->reject(function ($item) use ($first_tbnongnghiep) {
-            return $item->title === $first_tbnongnghiep->title;
+            if (isset($first_tbnongnghiep->title)) {
+                return $item->title === $first_tbnongnghiep->title;
+            }return;
         });
         $linhkienoto_diff = $linhkienoto->reject(function ($item) use ($first_linhkienoto) {
-            return $item->title === $first_linhkienoto->title;
+            if (isset($first_linhkienoto->title)) {
+                return $item->title === $first_linhkienoto->title;
+            }return;
         });
         $dvthietke_diff = $dvthietke->reject(function ($item) use ($first_dvthietke) {
-            return $item->title === $first_dvthietke->title;
+            if (isset($first_dvthietke->title)) {
+                return $item->title === $first_dvthietke->title;
+            }return;
         });
         $news = Tiding::join('fields', 'fields.id', 'tidings.field_id')
             ->where('fields.name', 'LĨNH VỰC CƠ KHÍ & CÔNG NGHIỆP HỖ TRỢ')
@@ -295,17 +319,26 @@ class FieldController extends Controller
         $first_batdongsan = $batdongsan->where('title', 'BẤT ĐỘNG SẢN')->first();
         $first_khudothi = $khudothi->where('title', 'KHU ĐÔ THỊ')->first();
         $giaothong_diff = $giaothong->reject(function ($item) use ($first_giaothong) {
-            return $item->title === $first_giaothong->title;
+            if (isset($first_giaothong->title)) {
+                return $item->title === $first_giaothong->title;
+            }return;
+            // return $item->title === $first_giaothong->title;
         });
 
         $khucn_diff = $khucn->reject(function ($item) use ($first_khucn) {
-            return $item->title === $first_khucn->title;
+            if (isset($first_khucn->title)) {
+                return $item->title === $first_khucn->title;
+            }return;
         });
         $batdongsan_diff = $batdongsan->reject(function ($item) use ($first_batdongsan) {
-            return $item->title === $first_batdongsan->title;
+            if (isset($first_batdongsan->title)) {
+                return $item->title === $first_batdongsan->title;
+            }return;
         });
         $khudothi_diff = $khudothi->reject(function ($item) use ($first_khudothi) {
-            return $item->title === $first_khudothi->title;
+            if (isset($first_khudothi->title)) {
+                return $item->title === $first_khudothi->title;
+            }return;
         });
         $news = Tiding::join('fields', 'fields.id', 'tidings.field_id')
             ->where('fields.name', 'LĨNH VỰC ĐẦU TƯ - XÂY DỰNG')
@@ -382,13 +415,19 @@ class FieldController extends Controller
         });
 
         $khucn_diff = $khucn->reject(function ($item) use ($first_khucn) {
-            return $item->title === $first_khucn->title;
+            if (isset($first_khucn->title)) {
+                return $item->title === $first_khucn->title;
+            }return;
         });
         $batdongsan_diff = $batdongsan->reject(function ($item) use ($first_batdongsan) {
-            return $item->title === $first_batdongsan->title;
+            if (isset($first_batdongsan->title)) {
+                return $item->title === $first_batdongsan->title;
+            }return;
         });
         $khudothi_diff = $khudothi->reject(function ($item) use ($first_khudothi) {
-            return $item->title === $first_khudothi->title;
+            if (isset($first_khudothi->title)) {
+                return $item->title === $first_khudothi->title;
+            }return;
         });
         $news = Tiding::join('fields', 'fields.id', 'tidings.field_id')
             ->where('fields.name', 'LĨNH VỰC LOGISTICS')
@@ -470,20 +509,30 @@ class FieldController extends Controller
         $first_tbnongnghiep = $tbnongnghiep->where('title', 'KHU MUA SẮM CAO CẤP')->first();
 
         $somiroc_diff = $somiroc->reject(function ($item) use ($first_somiroc) {
-            return $item->title === $first_somiroc->title;
+            if (isset($first_somiroc->title)) {
+                return $item->title === $first_somiroc->title;
+            }return;
         });
 
         $giacongcokhi_diff = $giacongcokhi->reject(function ($item) use ($first_giacongcokhi) {
-            return $item->title === $first_giacongcokhi->title;
+            if (isset($first_giacongcokhi->title)) {
+                return $item->title === $first_giacongcokhi->title;
+            }return;
         });
         $cuncapthep_diff = $cungcapthep->reject(function ($item) use ($first_cungcapthep) {
-            return $item->title === $first_cungcapthep->title;
+            if (isset($first_cungcapthep->title)) {
+                return $item->title === $first_cungcapthep->title;
+            }return;
         });
         $linhkiencn_diff = $linhkiencn->reject(function ($item) use ($first_linhkiencn) {
-            return $item->title === $first_linhkiencn->title;
+            if (isset($first_linhkiencn->title)) {
+                return $item->title === $first_linhkiencn->title;
+            }return;
         });
         $tbnongnghiep_diff = $tbnongnghiep->reject(function ($item) use ($first_tbnongnghiep) {
-            return $item->title === $first_tbnongnghiep->title;
+            if (isset($first_tbnongnghiep->title)) {
+                return $item->title === $first_tbnongnghiep->title;
+            }return;
         });
 
         $news = Tiding::join('fields', 'fields.id', 'tidings.field_id')

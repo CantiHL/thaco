@@ -440,7 +440,7 @@
                     <h2 class="font50 big-title"> QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
                 </div>
             </div>
-            <div class="develop-banner lazyloaded " style="background-image:url('{{ asset('img/bg-dark-1.png') }}')">
+            <div class="develop-banner lazyloaded " style="background-image:url('{{ asset('img/bg-dark-1.jpg') }}')">
                 <div class="develop-content-wrapper">
                     <div class="develop-content__slider">
                         <div class="container-customize">

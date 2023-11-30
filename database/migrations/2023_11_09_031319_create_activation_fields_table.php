@@ -13,7 +13,7 @@ return new class extends Migration {
         Schema::create('activation_fields', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('field_id');
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->string('description', 2000)->nullable();
             $table->string('image')->nullable();
             $table->string('link');

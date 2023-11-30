@@ -88,7 +88,6 @@
                     <thead>
                         <tr>
                             <th>Tên</th>
-                            <th>Mô tả</th>
                             <th>Ảnh</th>
                             <th>Lĩnh vực</th>
                             <th>Hoạt động trong</th>
@@ -105,10 +104,7 @@
                                         <td>
                                             {{ $item->title }}
                                         </td>
-                                        <td>
-                                            {{ $item->description }}
 
-                                        </td>
                                         <td>
                                             @if ($item->image)
                                                 <img src="{{ Storage::url($item->image) }}" width="100px"
@@ -125,7 +121,7 @@
 
                                         </td>
                                         <td>
-                                            {{ $item->link }}
+                                            <textarea disabled class="form-control" id="" cols="100%" rows="5">{{ $item->link }}</textarea>
 
                                         </td>
                                         <td>

@@ -20,13 +20,13 @@
                     <ul class="language">
                         <li class="lang lang-vi text-uppercase">
                             <a class="item-top__link first" rel="alternate" hreflang="vi" wire:navigate
-                                href="{{ route('contact') }}">
+                                href="{{ route('home') }}">
                                 <span class="color-active"> vi</span>
                             </a>
                         </li>
                         <li class="lang lang-vi text-uppercase">
                             <a class="item-top__link first" rel="alternate" hreflang="en" wire:navigate
-                                href="{{ route('contact') }}">
+                                href="{{ route('home') }}">
                                 <span class=""> en</span>
                             </a>
                         </li>
